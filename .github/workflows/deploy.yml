@@ -49,7 +49,7 @@ jobs:
         run: |
           echo "Verifying core files..."
           # Check for the trained model in the correct path
-          if [ ! -f models/models/model_breast_cancer.pkl ]; then 
+          if [ ! -f models/model_breast_cancer.pkl ]; then 
             echo "Error: models/model_breast_cancer.pkl (ML model) is missing! Ensure you run 'python breast_cancer_app.py' and commit the model."
             exit 1
           fi
